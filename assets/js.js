@@ -40,8 +40,21 @@ switch (new Date().getDay()) {
 // efter om det i dag er en hverdag eller weekend
 
 const todayType = document.getElementById('type');
+
+const weekDay = null;
+const dayType = "hverdag";
+
+
 switch (todayType) {
-    case 1
-    todayType.innerHTML = "Hverdag";
+    case 0:
+
+    weekDay = "søndag";
+    dayType = "weekend";
     break;
+
+    case 1:
+    weekDay = "mandag";
+    dayType = "hverdag";
+    break;
+
 } 
