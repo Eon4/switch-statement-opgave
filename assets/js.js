@@ -6,33 +6,32 @@
 const todayText = document.getElementById('today');
 console.log(new Date);
 
-const text = "Mandag";
-document.getElementById("today").innerHTML = text;
+document.getElementById("today").innerHTML = new Date;
 // Denne variabel angiver dagen det er i dag. Hvis det er mandag, er
 // variablen "0" som værdi, hvis det er tirsdag er den "1" osv.
 let todayDate = new Date().getDay();
 
 switch (new Date().getDay()) {
     case 0:
-      day = "Sunday";
+      todayText.innerHTML = "Sunday";
       break;
     case 1:
-      day = "Monday";
+        todayText.innerHTML = "Monday";
       break;
     case 2:
-       day = "Tuesday";
+        todayText.innerHTML = "Tuesday";
       break;
     case 3:
-      day = "Wednesday";
+        todayText.innerHTML = "Wednesday";
       break;
     case 4:
-      day = "Thursday";
+        todayText.innerHTML = "Thursday";
       break;
     case 5:
-      day = "Friday";
+        todayText.innerHTML = "Friday";
       break;
     case 6:
-      day = "Saturday";
+        todayText.innerHTML = "Saturday";
   }
 
 
@@ -41,3 +40,8 @@ switch (new Date().getDay()) {
 // efter om det i dag er en hverdag eller weekend
 
 const todayType = document.getElementById('type');
+switch (todayType) {
+    case 1
+    todayType.innerHTML = "Hverdag";
+    break;
+} 
